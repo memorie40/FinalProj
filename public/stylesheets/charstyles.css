@@ -1,0 +1,225 @@
+/*
+Design by LibDesigner.com
+http://www.libdesigner.com
+Released for free under a Creative Commons Attribution 3.0 License
+*/
+
+@import url(http://fonts.googleapis.com/css?family=BenchNine:400,700);
+
+/*--------------------reset-----------------------------*/
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}ol, ul {list-style:none;}blockquote, q {quotes:none;}table, table td {padding:0;border:none;border-collapse:collapse;}img {vertical-align:top;}embed {vertical-align:top;}input[type=text], textarea{ outline:none;}
+
+
+/*--------------------grids-----------------------------*/
+.container_16{margin-left:auto;margin-right:auto;width:960px}
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12,.grid_13,.grid_14,.grid_15,.grid_16
+{display:inline;float:left;position:relative;margin-left:10px;margin-right:10px}
+.alpha{margin-left:0}
+.omega{margin-right:0}
+.container_16 .grid_8{width:460px}
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.clearfix{display:block}
+
+/*--------------------menu-----------------------------*/
+nav{ position:relative; margin: 0px 2px 0 0;float:right;}
+.sf-menu ul {position:absolute;top:-999px; display:none;}
+.sf-menu ul li {width:100%; }
+.sf-menu li {float:left;position:relative}
+
+.sf-menu>li>a{display:block;position:relative; font-size: 11px; line-height: 16px; color:#ffffff;text-transform:uppercase;padding: 11px 21px;}
+.sf-menu>li>a:hover,.sf-menu>li.current>a,.sf-menu>li.sfHover>a{color:#000;}
+
+.sf-menu>li{background: url('images/nav_li.png') 0 0px repeat-x ;border-radius:13px;margin-left:9px;}
+.sf-menu>li:hover,.sf-menu>li.current,.sf-menu>li.sfHover{background-position:0 -47px;}
+
+.sf-with-ul span{display:block;width:23px;height:14px;background: url('images/with_ul.png') no-repeat;position:absolute;bottom:-11px;left:40px;z-index:999;}
+.sf-with-ul:hover span, .sf-menu>li.current span,.sf-menu>li.sfHover span{background-position:0 -14px;}
+
+
+article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
+
+/* Global properties ======================================================== */
+html {width:100%}
+
+body {font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:19px; color:#898987; min-width:960px; background:#353535;}
+.main {width:960px;padding:0;margin:0 auto;}
+
+#m_page{min-width:1044px;}
+/*********************************fonts*************************************/
+.reg {text-transform:uppercase}
+.f_left {float:left}
+.f_right {float:right}
+.align_right {text-align:right}
+.align_center {text-align:center}
+
+.it{font-style:italic}
+.let{letter-spacing:-1px}
+
+/*********************************CLASSES**********************************/
+
+.clear {clear:both;width:100%;line-height:0;font-size:0;}
+.wrapper {width:100%;overflow:hidden}
+.extra_wrapper{ overflow:hidden;}
+.container{width:100%}
+.extra_last, .last{ margin-bottom:0 !important; padding-bottom:0 !important;}
+.extra_last{ border:none !important; background:none !important;}
+.bg_none{ background:none !important;}
+.rel{position:relative;}
+/*==================================== Links ======================================================== */
+a {color:#999999; outline:none; text-decoration:none; cursor:pointer;}
+a:hover{ color:#921F04; text-decoration:none;}
+
+.button{ background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	display:inline-block; 
+	padding:9px 12px 9px; 
+	border-radius:7px;
+	font-weight:bold;
+	text-transform:uppercase; 
+	margin: 17px 0 2px 0; 
+	font-size: 11px; 
+	line-height: 14px; 
+	color:#fff; 
+	background: url('images/button.jpg') repeat-x #484646;
+	text-shadow:1px 1px #272625;
+	box-shadow: 1px 1px #505b49;}
+.button:hover{ background-position:0 -29px;color:#fff;}
+
+/*********************************Displays*************************************/
+.block{ display:block;}
+.inline-block{ display:inline-block;}
+
+/*********************************header*************************************/
+
+.header {padding: 28px 10px 28px;}
+.header h1{width:238px;padding-top:4px;float:left;}
+.header h1 a {display:block;width:238px;height:36px; 0 0 no-repeat; text-decoration:none; color: #ffffff; font-size: 32px; }
+.logo {font-family: 'BenchNine', sans-serif;}
+
+/*********************************content*************************************/
+#content {padding:52px 49px 49px 0px; position:relative;z-index:10;}
+.cont_pad{padding:40px 0 49px 0 !important;}
+.cont_pad1{padding:61px 0 49px 0 !important;}
+
+/*================================>> Aside <<========================================*/
+aside{padding: 32px 27px 30px;}
+aside h3{font-size: 30px; line-height: 36px; margin-bottom:29px; color: #fff;text-transform:uppercase;text-align:center;text-shadow:1px 1px #568040;background: url('images/aside_h3.png') 50% bottom repeat-x;padding-bottom:16px;}
+
+
+/*================================>> Global Blocks <<========================================*/
+#m_page .block2{height:394px;}
+#m_page .car_box{padding-top:67px;}
+#m_page .block2{z-index:9;}
+
+.block1{background: url('images/block1.jpg') 50% 0 repeat-x;position:relative;z-index:10;}
+.block2{position:relative;z-index:2;background: url('images/palebluegray.jpg') 0.5% 0;min-height:7px;}
+.block3{border-top:3px solid #fff;background:#fff;position:relative;z-index:1;}
+.block3:before, .block3:after, .block4:after{display:block;width:100%;position:absolute;left:0;content:"";}
+.block3:before{background: url('images/block3_bef.jpg') repeat-x; top:0;height:160px;}
+.block3:after{background: url('images/block3_aft.jpg') repeat-x;bottom:0;height:228px;}
+.block5{background: url('images/block3_bef.jpg') 50% 0 repeat-x;position:relative;z-index:10;}
+/*===============================>> Paragraphs <<=============================*/
+
+p {margin-bottom:19px}
+.p2{ margin-bottom:24px;}
+.p3{ margin-bottom:6px;}
+.p4{ margin-bottom:39px;}
+.p5{ margin-bottom:17px;}
+.p6{ margin-bottom:0;}
+
+/*================================>> LISTS <<========================================*/
+.list1{line-height:16px;}
+
+.list2{}
+.list2 li{ background:url(images/marker2.html) 0 7px no-repeat; padding-left:20px;}
+.list2 a{}
+
+.list3{}
+.list3 li{ background:url(images/marker3.html) 0 7px no-repeat; padding-left:20px;}
+.list3 a{}
+
+/*================================>> H <<========================================*/
+h2,h3,h4{ font-weight:normal;}
+h2{font-size: 30px; line-height: 36px; color:#4c4a4a; text-transform:uppercase;background: url('images/h2_stripe.png') 0 bottom repeat-x;padding-bottom:14px;position:relative;}
+
+h2.ind{ margin-bottom:31px;}
+h2.ind1{ margin-bottom:25px;}
+h2.ind2{ margin-bottom:27px;}
+h2.ind3{ margin-bottom:22px;}
+h2.ind4{ margin-bottom:30px;}
+
+/*================================>> GOOGLE FONTS  <<========================================*/
+.car_box .title, h2, aside h3, .banner1 .title, .blog .title{font-family: 'BenchNine', sans-serif;}
+/*================================>> hovers <<========================================*/
+.social_list>li, .social_list>li a, .button, .img_wrap, .lightbox-image span{-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;}
+
+/*********************************page_1*************************************/
+.ext_list>li, .ext_box{ overflow:hidden;}
+.ext_list>li>figure, .ext_box>figure{ float:left;}
+.ext_list>li>div, .ext_box>div{overflow:hidden;}
+
+/*================================>> Gallery Round_About <<========================================*/
+.round_box{height:340px;width:1034px;margin:0 auto;position:relative;overflow:hidden;padding: 113px 0 0 7px;}
+.roundabout-holder{width:710px !important;height:254px !important;margin:0 auto;position:relative;}
+.round>li{box-shadow: 0 0 10px rgba(0,0,0,0.3);cursor:pointer;}
+.round>li img{width:100%;height: auto;}
+.roundabout-in-focus{box-shadow: 0 10px 14px rgba(0,0,0,1);cursor: default !important;}
+.round_but{width:80px;height:80px;position:absolute;display:block;top:198px;z-index:999;}
+.round_prev{background: url('images/round_prev.png') no-repeat;left:126px;}
+.round_next{background: url('images/round_next.png') no-repeat;right:126px;}
+.round_but:hover{background-position:0 -80px;}
+/*================================>> Round end <<========================================*/
+
+
+#mycarousel .box1{padding: 0 0 0 !important ;}
+#mycarousel .box1>div{}
+#mycarousel .box1>figure{width:77px;margin: 8px 0 0;}
+#mycarousel .box1 .button{margin-top:16px;}
+
+.box{padding: 0 10px 0 19px;}
+.box1{padding: 0 0px 0 19px;}
+
+.img_wrap, .jta-tweet-profile-image-link{display:inline-block;background:#f0efe8;box-shadow: 0 0 0 1px #e9e8e1;border-radius:15px;padding: 6px;}
+a.img_wrap:hover{background:#921F04;}
+
+.my_class{}
+.my_class>div{}
+.my_class>figure{margin: -1px 16px 0 0;}
+
+.f_14{font-size: 14px; line-height: 19px; color: #921F04;font-weight:bold;}
+
+.photos{margin-bottom:1px;}
+.photos a{margin-left:7px;display:inline-block;}
+.photos a.first{margin:0;}
+
+.m_bot1{margin-bottom:41px;}
+.m_bot2{margin-bottom:43px;}
+.m_bot3{margin-bottom:22px;}
+.m_bot4{margin-bottom:40px;}
+.m_bot5{margin-bottom:48px;}
+
+.green_link{text-decoration:underline;font-size: 11px; line-height: 16px; color: #999; text-transform:uppercase;}
+.green{font-size: 14px; line-height: 19px; color: #921F04; font-weight:bold;}
+a.green:hover{color:#ebc74f;}
+
+.bold{font-size: 11px; line-height: 16px; color: #4c4a4a;text-transform:uppercase;}
+
+.topics{margin: -4px 0 0;overflow:hidden;}
+.topics p{margin-bottom:9px;}
+.topics>ul{width:230px;float:left;line-height:16px;}
+.topics>ul:first-child{margin: 0 31px 0 0; width:170px;}
+.topics>ul>li{margin-bottom:22px;white-space: nowrap;}
+
+/****************************footer************************/
+footer {padding:23px 0;background:none;text-align:center;}
+footer, footer a{color:#fff;font-size: 11px; line-height: 16px; text-shadow:1px 1px #000;text-transform:uppercase;}
+footer a:hover{color:#fff;}
+
+.header H1{font-size: 30px; text-transform: uppercase}

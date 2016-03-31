@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SQComic Uploader</title>
+<link rel="shortcut icon" href="images/ingenio.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="stylesheets/cssstyles.css" />
+</head>
+<body>
+<center>
+	<div id="header">
+	<img src="images/strangequarklargebanner.jpg" width="700">
+	</div>
+</center>
+
+	<nav>
+	<div id="navbar">
+	<div id="nav1">
+			<br><br>
+		   <input type="submit" class="myButton" value="  Comics  Page  "><br><br>
+		   <input type="submit" class="myButton" value="Character Bios"><br><br>
+		   <input type="submit" class="myButton" value="Miscellaneous "><br><br>
+	</div>
+	</div>
+	</nav>
+
+	<div id="container" style="padding-top:10px; padding-left: 150px;">
+		<form ng-submit="getFile()" style = "margin-top:40px;">
+			Comic to upload:<input type="file" name="comic" ngf-select ng-model="picFile" ngf-accept="'.jpg'" required>
+			<i ng-show="myForm.file.$error.required">*required</i> <br>	<br>
+			Key Words: <input type="text" ng-model="keyWords" placeholder="Enter key Words" size="100"></input><br><br>
+			Searchable Text: <textarea ng-model="searchable" placeholder="Enter Searchable Text" cols="100" rows="10"></textarea><br><br>
+			<button ng-disabled="!myForm.$valid" ng-click="uploadPic(picFile)">Upload Comic to Database</button><br>
+			<img ngf-src="picFile" width="700px" height = "250px"> <span ng-show="picFile.result"></span>
+
+		</form>
+	</div>
+
+
+
+<script src="javascripts/jquery-1.4.2.min.js"></script>
+<script src="javascripts/upload.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script> 
+</body>
+</html>
